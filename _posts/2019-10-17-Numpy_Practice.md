@@ -4,7 +4,7 @@
 #### 1. ["1", "4", 5, 8] 를 numpy로 Float로 선언
 
 
-```
+```python
 import numpy as np
 aa = np.array(["1", "4", 5, 8], float)
 aa
@@ -20,7 +20,7 @@ aa
 #### 2. 위의 것 shape확인.
 
 
-```
+```python
 aa.shape
 ```
 
@@ -35,7 +35,7 @@ aa.shape
 
 
 
-```
+```python
 aa.dtype
 ```
 
@@ -46,7 +46,7 @@ tensor  = [[[1,2,5,8],[1,2,5,8],[1,2,5,8]],
            [[1,2,5,8],[1,2,5,8],[1,2,5,8]]]
 
 
-```
+```python
 tensor  = [[[1,2,5,8],[1,2,5,8],[1,2,5,8]],
            [[1,2,5,8],[1,2,5,8],[1,2,5,8]],
            [[1,2,5,8],[1,2,5,8],[1,2,5,8]],
@@ -69,7 +69,7 @@ ten_array.shape, ten_array.ndim, ten_array.size
 - test_matrix = [[1,2,3,4], [1,2,5,8]]
 
 
-```
+```python
 test_matrix = [[1,2,3,4], [1,2,5,8]]
 test_array = np.array(test_matrix)
 test_array
@@ -86,7 +86,7 @@ test_array
 #### 6. 2X2X2 행렬로 변환
 
 
-```
+```python
 test_array.reshape(2,2,2)
 ```
 
@@ -104,7 +104,7 @@ test_array.reshape(2,2,2)
 #### 7. 2행짜리로 변환하고 열은 element갯수에 맞춰서 만들기
 
 
-```
+```python
 test_array.reshape(2,-1)
 ```
 
@@ -120,7 +120,7 @@ test_array.reshape(2,-1)
  - test_matrix = [[[1,2,3,4], [1,2,5,8]], [[1,2,3,4], [1,2,5,8]]]
 
 
-```
+```python
 #1
 test_array.flatten()
 ```
@@ -133,7 +133,7 @@ test_array.flatten()
 
 
 
-```
+```python
 #2
 test_array.reshape(1,-1).squeeze()
 ```
@@ -156,7 +156,7 @@ test_array.reshape(1,-1).squeeze()
 
 
 
-```
+```python
 test_exmaple = np.array([[1, 2, 3, 4, 5],
                          [6, 7, 8, 9, 10]], int)
 test_exmaple[:, 2:]
@@ -173,7 +173,7 @@ test_exmaple[:, 2:]
 #### 10. 행:1행, 열: 1~2열 선택
 
 
-```
+```python
 test_exmaple[1, 1:3]
 ```
 
@@ -187,7 +187,7 @@ test_exmaple[1, 1:3]
 #### 11. 행:1~2행 열:전체 선택
 
 
-```
+```python
 test_exmaple[1:3, :]
 ```
 
@@ -202,7 +202,7 @@ test_exmaple[1:3, :]
 #### 12-1 이중 9, 19, 29,와 같이 9로 끝나는애들만 1열짜리로 뽑아내라.
 
 
-```
+```python
 #1 
 a = np.arange(0,100).reshape(-1,10)
 a
@@ -225,7 +225,7 @@ a
 
 
 
-```
+```python
 #2
 a[:,-1].reshape(-1,1)
 ```
@@ -251,7 +251,7 @@ a[:,-1].reshape(-1,1)
 #### 13. 0에서 5까지 0.5 step으로 만들어라
 
 
-```
+```python
 a = np.arange(0, 5.5, 0.5)
 a
 ```
@@ -266,7 +266,7 @@ a
 #### 14. 위 array를 list로 변환해라.
 
 
-```
+```python
 list(a)
 ```
 
@@ -280,7 +280,7 @@ list(a)
 #### 15. 0으로 가득한 2*5 matrix만들어라
 
 
-```
+```python
 np.zeros((2,5))
 ```
 
@@ -295,7 +295,7 @@ np.zeros((2,5))
 #### 16. 3*3짜리 identity 행렬만들어라
 
 
-```
+```python
 np.identity(3)
 ```
 
@@ -315,7 +315,7 @@ np.identity(3)
 
 
 
-```
+```python
 test_array = np.arange(1,13).reshape(3,4)
 test_array.sum(axis=1)
 ```
@@ -330,7 +330,7 @@ test_array.sum(axis=1)
 #### 18. 위 어래이를 행방향으로 sum한 것을 반환
 
 
-```
+```python
 test_array.sum(axis=0)
 ```
 
@@ -346,7 +346,7 @@ test_array.sum(axis=0)
 - b = np.array([[2, 3, 4]])
 
 
-```
+```python
 a = np.array([[1, 2, 3]])
 b = np.array([[2, 3, 4]])
 np.vstack((a,b))
@@ -366,7 +366,7 @@ np.vstack((a,b))
 
 
 
-```
+```python
 a = np.array([[1, 2], [3, 4]])
 b = np.array([[5, 6]])
 np.concatenate((a,b.T), axis=1)
@@ -387,7 +387,7 @@ np.concatenate((a,b.T), axis=1)
 - test_b = np.arange(7,13).reshape(3,2)
 
 
-```
+```python
 test_a = np.arange(1,7).reshape(2,3)
 test_b = np.arange(7,13).reshape(3,2)
 test_a + test_b.T
@@ -404,7 +404,7 @@ test_a + test_b.T
 #### 22. a기준으로 2*3행렬이 되게 a와 b를 element 빼라해라
 
 
-```
+```python
 test_a - test_b.T
 ```
 
@@ -419,7 +419,7 @@ test_a - test_b.T
 #### 23. a, b array를 dot product해라.
 
 
-```
+```python
 test_a.dot(test_b)
 ```
 
@@ -436,7 +436,7 @@ test_a.dot(test_b)
 - test_vector = np.arange(10,40,10)
 
 
-```
+```python
 test_matrix = np.arange(1,13).reshape(4,3)
 print('test_matrix',test_matrix, '\n')
 test_vector = np.arange(10,40,10)
@@ -468,7 +468,7 @@ test_matrix+test_vector
 #### 25. a라는 벡터를 0~9 element로 선언하라.
 
 
-```
+```python
 a = np.arange(0,10)
 a
 ```
@@ -483,7 +483,7 @@ a
 #### 26. 25번의 벡터에서 0보다 큰애들은 true, 아닌애들 false로 array를 행렬만들어라
 
 
-```
+```python
 a>0
 ```
 
@@ -500,7 +500,7 @@ a>0
 #### 27. (5보다큰것이 있는지, 0보다 작은애가 있는지) 로 결과값받아라
 
 
-```
+```python
 any(a>5), any(a<0)
 ```
 
@@ -514,7 +514,7 @@ any(a>5), any(a<0)
 #### 28. (전부 5보다 큰지, 전부 10보다 작은지)로 결과값받아라.
 
 
-```
+```python
 all(a>5), all(a<=10)
 ```
 
@@ -529,7 +529,7 @@ all(a>5), all(a<=10)
 - a = np.array([1, 3, 0], float)
 
 
-```
+```python
 np.where(a>0, 3, 2)
 ```
 
@@ -543,7 +543,7 @@ np.where(a>0, 3, 2)
 #### 30. 0보다 큰애들의 인덱스만 array로 받아라
 
 
-```
+```python
 np.where(a>0)
 ```
 
@@ -558,7 +558,7 @@ np.where(a>0)
 - a = np.array([1,2,4,5,8,78,23,3])
 
 
-```
+```python
 a = np.array([1,2,4,5,8,78,23,3])
 print(a)
 np.argmax(a), np.argmin(a)
@@ -578,7 +578,7 @@ np.argmax(a), np.argmin(a)
 - a = np.array([[1,2,4,7],[9,88,6,45],[9,76,3,4]])
 
 
-```
+```python
 a = np.array([[1,2,4,7],[9,88,6,45],[9,76,3,4]])
 print('a: ',a)
 print('\n')
@@ -604,7 +604,7 @@ np.argmax(a.sum(axis=1))
 33. 행방향끼리비교해서 최대값들을 array로 받아라.
 
 
-```
+```python
 a.max(axis=0)
 ```
 
@@ -634,7 +634,7 @@ A = np.array([
 [10, 16, 12, 14, 11, 12, 14, 18, 11]])
 
 
-```
+```python
 A = np.array([
 [12, 13, 14, 12, 16, 14, 11, 10,  9],
 [11, 14, 12, 15, 15, 16, 10, 12, 11],
@@ -680,13 +680,13 @@ np.where(A>15, 1,0)
 - b = np.array([0, 0, 1, 3, 2, 1], int) # 반드시 integer로 선언
 
 
-```
+```python
 b = np.array([0, 0, 1, 3, 2, 1], int) # 반드시 integer로 선언
 a = np.array([2,4,6,8,], float)
 ```
 
 
-```
+```python
 #1
 a.take(b)
 ```
@@ -699,7 +699,7 @@ a.take(b)
 
 
 
-```
+```python
 #2
 a[b]
 ```
