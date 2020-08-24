@@ -145,8 +145,6 @@ test_array.reshape(1,-1).squeeze()
 
 
 
-<font color="white">
-
 # Indexing And Slicing
 
 #### 9. 위행렬을 행:전체, 열:2열이상 선택하기
