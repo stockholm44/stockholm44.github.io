@@ -527,16 +527,15 @@ df['first_name']
 ```
 
 
-    ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
 
-    <ipython-input-2-f706a29788ea> in <module>
-          1 #1
-    ----> 2 df['first_name']
-    
+    0    Jason
+    1    Molly
+    2     Tina
+    3     Jake
+    4      Amy
+    Name: first_name, dtype: object
 
-    NameError: name 'df' is not defined
 
 
 
@@ -547,17 +546,12 @@ df.first_name
 
 
 
-    (0    Jason
-     1    Molly
-     2     Tina
-     3     Jake
-     4      Amy
-     Name: first_name, dtype: object, 0    Jason
-     1    Molly
-     2     Tina
-     3     Jake
-     4      Amy
-     Name: first_name, dtype: object)
+    0    Jason
+    1    Molly
+    2     Tina
+    3     Jake
+    4      Amy
+    Name: first_name, dtype: object
 
 
 
@@ -1211,15 +1205,21 @@ account_series[account_series<250000]
 ```
 
 
-    ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
 
-    <ipython-input-3-90ba745ed8b6> in <module>
-    ----> 1 account_series[account_series<250000]
-    
+    0     211829
+    3     109996
+    4     121213
+    5     132971
+    6     145068
+    7     205217
+    8     209744
+    9     212303
+    10    214098
+    11    231907
+    12    242368
+    Name: account, dtype: int64
 
-    NameError: name 'account_series' is not defined
 
 
 #### index 변경
@@ -2190,10 +2190,134 @@ df2
 ```
 
 
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
 ```python
 #1
 df1+df2
 ```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>11.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14.0</td>
+      <td>16.0</td>
+      <td>18.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 
 ```python
