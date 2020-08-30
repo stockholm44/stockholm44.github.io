@@ -655,7 +655,7 @@ pd.read_csv(file, sep=',').head(1)
     - 참고링크 : https://docs.python.org/2.0/ref/strings.html
     - \n, \t, \\등 str에서 특수한 기능을하는 escape sequence의 시작 문자이기 때문에 단순 \는 다음문자가 무엇인가에 따라 전혀 다른 뜻이 된다.
     - 예를 들면 'C:\test\'로 경로를 입력하면 가운데 \t를 tab으로 인식하게 된다.
-    - 그래서 경로를 위해 문자를 파이썬에서는 백슬래쉬 2개인 \\(='\')나 포워드슬래시 /로 구분한다.
+    - 그래서 경로를 위해 문자를 파이썬에서는 백슬래쉬 2개인 '\\'나 포워드슬래시 /로 구분한다.
     - (※ \ : BACKSLASH, / : FORWARDSLASH -> 영어사전참고함)
 
 - 윈도우 경로를 그럼 어떻게 인식하게 효율적으로하는가?
@@ -664,7 +664,7 @@ pd.read_csv(file, sep=',').head(1)
 
 #### A. 윈도우형식 파일경로 str 앞에 r 붙이기
 - r을 붙이면 escape sequence가 무시되어 경로 그대로를 반환한다.
-- \로 입력한것들이 다 \\로 변환됨을 알 수 있다.
+- '\'로 입력한것들이 다 '\\'로 변환됨을 알 수 있다.
 
 
 ```python
@@ -681,7 +681,7 @@ pd.read_csv(file, sep=',').head(1)
 
 #### B. str.replace() 함수 이용하기
 - 안된다. SyntaxError: EOL while scanning string literal 라고 에러가 뜬다.
-- '\' 자체도 인식이 안된다.ㅜ
+- '\\' 자체도 인식이 안된다.ㅜ
 - 그냥 A방법만 사용하자
 
 
