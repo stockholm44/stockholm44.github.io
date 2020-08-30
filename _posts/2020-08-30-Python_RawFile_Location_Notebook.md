@@ -175,35 +175,34 @@ print(os.getcwd())
 - 각 파일의 위치를 file에 저장하고 os.path.abspath() 함수로 절대위치를 확인하여 잘가져왔나 확인하자.
 
 
-
+'''python
 200830_파일경로 및 패키지 경로/
-- ├── a/
-- │   ├── a-1/
-- │   │   └── train_a-1.csv
-- │   ├── a-2/
-- │   └── train_a.csv
-- └── b/
--     ├── b-1/
--     │   └── train_b-1.csv
--     ├── b-2/
--     │   ├── .ipynb_checkpoints/
--     │   │   └── 200830_파일경로 및 패키지 경로-checkpoint.ipynb
--     │   ├── 200830.ipynb
--     │   ├── 200830_파일경로 및 패키지 경로.ipynb
--     │   ├── 2020-08-30-파이썬 파일경로관련.md.md
--     │   ├── c-1/
--     │   │   └── train_c-1.csv
--     │   ├── c-2/
--     │   ├── folder_tree.jpg
--     │   ├── image/
--     │   │   └── folder_tree.jpg
--     │   ├── input/
--     │   │   ├── test.csv
--     │   │   └── train.csv
--     │   └── train_b-2.csv
--     └── train_b.csv
-
-
+ ├── a/
+ │   ├── a-1/
+ │   │   └── train_a-1.csv
+ │   ├── a-2/
+ │   └── train_a.csv
+ └── b/
+     ├── b-1/
+     │   └── train_b-1.csv
+     ├── b-2/
+     │   ├── .ipynb_checkpoints/
+     │   │   └── 200830_파일경로 및 패키지 경로-checkpoint.ipynb
+     │   ├── 200830.ipynb
+     │   ├── 200830_파일경로 및 패키지 경로.ipynb
+     │   ├── 2020-08-30-파이썬 파일경로관련.md.md
+     │   ├── c-1/
+     │   │   └── train_c-1.csv
+     │   ├── c-2/
+     │   ├── folder_tree.jpg
+     │   ├── image/
+     │   │   └── folder_tree.jpg
+     │   ├── input/
+     │   │   ├── test.csv
+     │   │   └── train.csv
+     │   └── train_b-2.csv
+     └── train_b.csv
+'''
 
 #### 1. b-2 폴더
 - 현재 폴더의 파일을 가져오는 것은 제일 쉽다. 
