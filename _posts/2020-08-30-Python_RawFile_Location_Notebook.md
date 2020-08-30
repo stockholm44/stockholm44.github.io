@@ -175,7 +175,7 @@ print(os.getcwd())
 - 각 파일의 위치를 file에 저장하고 os.path.abspath() 함수로 절대위치를 확인하여 잘가져왔나 확인하자.
 
 
-'''python
+```python
 200830_파일경로 및 패키지 경로/
  ├── a/
  │   ├── a-1/
@@ -202,7 +202,7 @@ print(os.getcwd())
      │   │   └── train.csv
      │   └── train_b-2.csv
      └── train_b.csv
-'''
+```
 
 #### 1. b-2 폴더
 - 현재 폴더의 파일을 가져오는 것은 제일 쉽다. 
